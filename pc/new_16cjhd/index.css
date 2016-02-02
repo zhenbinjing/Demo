@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*去除默认样式*/
 body,dl,dt,dd,ul,ol,li,table,tr,td,form,input,select,textarea,blockquote,h1,h2,p,img,a,em{ margin:0; padding:0; outline:0; border:0; list-style:none; text-decoration:none; font-style:normal; font-weight: normal; border-collapse:collapse;border-spacing:0;font-family:"微软雅黑";}
 
@@ -132,7 +132,7 @@ body,dl,dt,dd,ul,ol,li,table,tr,td,form,input,select,textarea,blockquote,h1,h2,p
 /*专题模块样式*/
 .box1a{background-image: url(img/box1_2.png);width: 1027px;height: 212px;}
 .box1aa{width: 147px;height: 147px; right:50px; top:20px;}
-.box2p div{ width: 238px;height: 613px; margin-right:16px;}
+.box2p div{ width: 238px;height: 613px; margin-right:16px;margin:0 6px\9;}
 .box2p div:last-child{ margin-right:0}
 .box2s1{background-image: url(img/box1_3.png);}
 .box2s2{background-image: url(img/box1_4.png);}
