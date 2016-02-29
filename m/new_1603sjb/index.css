@@ -1,0 +1,62 @@
+body,ul,li,a,img,h1,h2,p{ margin:0; padding:0; border:none; text-decoration:none; font-weight:100; list-style:none; font-family:"微软雅黑";}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}.clearfix{*zoom:1;}
+img{ width:100%;}
+.fwb{font-weight: bold;}
+.lh200{line-height: 200%;}
+.tac{text-align: center;}
+.taj{text-align: justify;}
+
+.mlra{margin-left: auto;margin-right: auto;}
+.rq{max-width: 640px;min-width: 320px; }
+
+/*行高*/
+.lh{line-height: 100%;}
+.lh150{line-height: 150%;}
+.lh180{line-height: 180%;}
+.lh200{line-height: 200%;}
+
+/*字体大小*/
+.fz38{font-size: 3.8rem;}
+.fz32{font-size: 3.2rem;}
+.fz30{font-size: 3rem;}
+.fz24{font-size: 2.4rem;}
+.fz20{font-size: 2rem;}
+
+/*字体颜色*/
+.cl-hei{color: #000;}
+.cl-bai{color: #fff;}
+.cl-slan{color: #121f42;}
+.cl-chen{color: #ff6d00;}
+.cl-hong{color: #e60012;}
+.cl-zong{color: #502200;}
+
+/*背景颜色*/
+.bc-slan{ background-color: #121f42;}
+.bc-qlan{background-color: #7da0fe;}
+.bc-chen{background-color: #f19149;}
+.bc-hui{background-color: #dedede;}
+
+/*内边距*/
+.pb672{ padding-bottom: 105%;}
+.pt20{padding-top: 3.125%;}
+.pb20{padding-bottom: 3.125%;}
+.pl20{padding-left:3.125%;}
+.pr20{padding-right:3.125%;}
+
+/*外边距*/
+.mt40{margin-top: 6.25%;}
+.mb40{margin-bottom: 6.25%;}
+.mt20{margin-top: 3.125%;}
+.mb20{margin-bottom: 3.125%;}
+
+/*圆角虚线*/
+.yjxx{ border:2px dashed #502200; border-radius:20px;}
+.yuan{ border-radius:50px;}
+
+/*宽度*/
+.w430{width: 67%;}
+.w610{width: 96%;}
+
+/**/
+.box2a{background: url(img/box1.jpg) no-repeat top center; background-size:cover;}
+.box5{background: url(img/box2.jpg) no-repeat top center; background-size:cover; }
