@@ -82,7 +82,7 @@ animation-name: spin; animation-duration: 200000ms; animation-iteration-count: i
 
 .ggan{background-color: #ff2e01;width: 440px;height: 90px; border-radius: 45px;-webkit-transition:all .2s linear 0s;transition:all .2s linear 0s;}
 .ggan:hover{background-color: #ca2704;}
-.box5{background-image:url(../img/box8_1.jpg);height: 848px; background-attachment: fixed;}
+.box5{background-image:url(../img/box8_1.jpg);height: 848px;}
 
 .tabbox{width:100%}
 .tabbox .tab{overflow:hidden; padding-bottom: 10px;}
