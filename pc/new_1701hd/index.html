@@ -321,7 +321,7 @@ $(document).ready(function() {
         });
         $(".rope:eq(" + index + ")").toggle(function() {
             $(this).stop().animate({
-                top:"-40px"
+                top:"0px"
             }, {
                 queue:false,
                 duration:350,
@@ -336,7 +336,7 @@ $(document).ready(function() {
             $curtainopen = false;
         }, function() {
             $(this).stop().animate({
-                top:"0px"
+                top:"-40px"
             }, {
                 queue:false,
                 duration:350,
