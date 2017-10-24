@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tab OOP</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<style>
+ul,ol{ padding: 0; margin: 0; list-style-type: none;}
+.hd>li{ background:yellow; color:#000; display: inline-block; }
+.hd>li.active{ background:red; color:#fff;}
+.bd .content{ display:none; border:1px solid #ccc;}
+</style>
+
+</head>
+
+<body>
+<div id="box1">
+<ul class="hd">
+	<li class="active">aaa</li>
+	<li>bbb</li>
+	<li>ccc</li>
+</ul>	
+<div class="bd">
+	<div class="content" style="display: block;">aaa</div>
+	<div class="content">bbb</div>
+	<div class="content">ccc</div>
+</div>
+</div>
+<div id="box2">
+<ul class="hd">
+	<li class="active">aaa</li>
+	<li>bbb</li>
+	<li>ccc</li>
+</ul>	
+<div class="bd">
+	<div class="content" style="display: block;">aaa</div>
+	<div class="content">bbb</div>
+	<div class="content">ccc</div>
+</div>
+</div>
+<script>
+	
+	function Tab(a){
+		
+		a = a || {};
+		
+		var opts={			
+			id:a.id || "tab",
+			autoPlay:a.autoPlay || false,
+			autoTime:a.autoTime || 1000
+		}
+		
+		this.oBox = document.getElementById(opts.id);		
+		this.aBtn = this.oBox.firstElementChild.children;
+		this.aDiv = this.oBox.lastElementChild.children;
+		this.iNow = 0;
+		this.timer = null;
+		
+		this.init();				
+		if(opts.autoPlay === true){
+			this.autoTime = opts.autoTime;
+			this.autoPlay();
+			this.overOut();
+		}
+	}
+
+	//初始化
+	Tab.prototype.init=function(){
+		var _this = this;
+
+		for (var i = 0; i < this.aBtn.length; i++) {
+		this.aBtn[i].index = i;
+		this.aBtn[i].addEventListener("click",function(){		
+		_this.iNow = this.index;
+		_this.titleShow();
+		_this.contentShow();					
+		},false);
+		}				
+	}
+
+	//点击切换
+	Tab.prototype.titleShow = function (){
+		var _this = this;
+
+		for (var i = 0; i < _this.aBtn.length; i++) {
+		_this.aBtn[i].className = '';
+		_this.aBtn[_this.iNow].className = 'active';
+		};
+	}
+
+	Tab.prototype.contentShow = function(){				
+		var _this = this;
+
+		for (var i = 0; i < _this.aDiv.length; i++) {					
+		_this.aDiv[i].style.display = 'none';
+		_this.aDiv[_this.iNow].style.display = 'block';
+		}				
+	}	
+
+	//自动切换
+	Tab.prototype.autoPlay = function(){
+		var _this = this;
+
+		_this.timer=setInterval(function(){
+
+		if(_this.iNow==_this.aBtn.length-1){
+		_this.iNow=0;
+		}else{						
+		_this.iNow++;				
+		};		
+
+		_this.titleShow();
+		_this.contentShow();
+
+		},_this.autoTime);
+	}
+
+	//鼠标移入暂停，移出开始
+	Tab.prototype.overOut = function(){
+		var _this = this; 
+
+		_this.oBox.onmouseover = function(){
+		clearInterval(_this.timer);
+		}
+
+		_this.oBox.onmouseout = function(){
+		clearInterval(_this.timer);
+		_this.autoPlay();
+		}
+	}
+	
+	function tab(uBox){
+		return new Tab(uBox);					
+	};	
+	
+	tab({
+		id:"box1",
+		autoPlay:true
+	});
+	
+	tab({
+		id:"box2",
+		autoPlay:true,
+		autoTime: 2000
+	});
+</script>
+</body>
+</html>

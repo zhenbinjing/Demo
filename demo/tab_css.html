@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CSS input:checked gallery example - MDN</title>
+<style type="text/css">
+.gallery-container {
+	position: relative;
+	width: 500px;
+	height: auto;
+	padding-top: 350px;
+	padding-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 1px #aaaaaa solid;
+	overflow: hidden;
+}
+
+img.gallery-fullsize {
+	opacity: 0;
+	position: absolute;
+	top: 15px;
+	left: 50px;
+	display: none;
+}
+	
+div.gallery-item {
+	display: inline-block;
+}
+
+input.gallery-selector {
+	display: none;
+}
+
+label.gallery-label {
+	cursor: pointer;
+}
+	
+input.gallery-selector:checked ~ img.gallery-fullsize {
+	display: block;
+	animation: opac .5s ease 1 forwards;
+}
+
+input.gallery-selector:checked ~ label img.gallery-preview{border: 1px solid #000;}	
+
+@keyframes opac {
+	from {  opacity: 0}
+	to { opacity: 1 }
+}
+</style>
+</head>
+
+<body>
+<h1>CSS input:checked gallery</h1>
+<div class="gallery-container">
+	<div class="gallery-item">
+	    <input type="radio" checked name="gallery-list" class="gallery-selector" value="" id="gallery-item1" />
+		<label for="gallery-item1" class="gallery-label"><img src="images/1s.jpg" class="gallery-preview" /></label>		
+		<img src="images/1.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">
+		
+		<input type="radio" name="gallery-list" class="gallery-selector" value="" id="gallery-item2" />
+		<label for="gallery-item2" class="gallery-label"><img src="images/2s.jpg" class="gallery-preview" /></label>
+		<img src="images/2.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">		
+		<input type="radio" name="gallery-list" class="gallery-selector" value="" id="gallery-item3" />
+		<label for="gallery-item3" class="gallery-label"><img src="images/3s.jpg" class="gallery-preview" /></label>
+		<img src="images/3.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">		
+		<input type="radio" name="gallery-list" class="gallery-selector" value="" id="gallery-item4" />
+		<label for="gallery-item4" class="gallery-label"><img src="images/4s.jpg" class="gallery-preview" /></label>
+		<img src="images/4.jpg" class="gallery-fullsize" />
+	</div>
+</div>
+
+<div class="gallery-container">
+	<div class="gallery-item">
+	    <input type="radio" checked name="gallery-list2" class="gallery-selector" value="" id="gallery-item11" />
+		<label for="gallery-item11" class="gallery-label"><img src="images/1s.jpg" class="gallery-preview" /></label>		
+		<img src="images/1.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">		
+		<input type="radio" name="gallery-list2" class="gallery-selector" value="" id="gallery-item22" />
+		<label for="gallery-item22" class="gallery-label"><img src="images/2s.jpg" class="gallery-preview" /></label>
+		<img src="images/2.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">		
+		<input type="radio" name="gallery-list2" class="gallery-selector" value="" id="gallery-item33" />
+		<label for="gallery-item33" class="gallery-label"><img src="images/3s.jpg" class="gallery-preview" /></label>
+		<img src="images/3.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">		
+		<input type="radio" name="gallery-list2" class="gallery-selector" value="" id="gallery-item44" />
+		<label for="gallery-item44" class="gallery-label"><img src="images/4s.jpg" class="gallery-preview" /></label>
+		<img src="images/4.jpg" class="gallery-fullsize" />
+	</div>
+</div>
+</body>
+</html>
