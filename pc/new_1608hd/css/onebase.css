@@ -1,21 +1,21 @@
-@charset "gb2312";
-/*È¥³ıÄ¬ÈÏÑùÊ½,¿ÉÒÔÓÃnormalize.css´úÌæ,ÕâÀïÊÇ°´ÕÕÎÒÆ½Ê±ÓÃµÄ±êÇ©×öµÄreset*/
+@charset "utf-8";
+/*å»é™¤é»˜è®¤æ ·å¼,å¯ä»¥ç”¨normalize.cssä»£æ›¿,è¿™é‡Œæ˜¯æŒ‰ç…§æˆ‘å¹³æ—¶ç”¨çš„æ ‡ç­¾åšçš„reset*/
 
 *{  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *:before,*:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-body,div,dl,dt,dd,ul,ol,li,table,tr,td,form,input,select,textarea,blockquote,h1,h2,p,span,img,a,em{ margin:0; padding:0; outline:0; border:0; border-spacing:0; list-style:none; text-decoration:none; border-collapse:collapse;  font-family:"Î¢ÈíÑÅºÚ";}
+body,div,dl,dt,dd,ul,ol,li,table,tr,td,form,input,select,textarea,blockquote,h1,h2,p,span,img,a,em{ margin:0; padding:0; outline:0; border:0; border-spacing:0; list-style:none; text-decoration:none; border-collapse:collapse;  font-family:"å¾®è½¯é›…é»‘";}
 
 
 
-/*-----ÅÅ°æ½â¾ö·½°¸start------*/
+/*-----æ’ç‰ˆè§£å†³æ–¹æ¡ˆstart------*/
 
-/*Çå³ı¸¡¶¯*/
+/*æ¸…é™¤æµ®åŠ¨*/
 .clearfix:after {visibility: hidden; display: block; clear: both; content:" "; font-size: 0; height: 0;}
 .clearfix{*zoom:1;}
 
-/*-----ÅÅ°æ½â¾ö·½°¸end------*/
+/*-----æ’ç‰ˆè§£å†³æ–¹æ¡ˆend------*/
 
-/*ÔªËØ×´Ì¬*/
+/*å…ƒç´ çŠ¶æ€*/
 .dn{display: none;}
 .db{display: block;}
 .dt{display: table;}
@@ -24,14 +24,14 @@ body,div,dl,dt,dd,ul,ol,li,table,tr,td,form,input,select,textarea,blockquote,h1,
 
 
 
-/*¿é×´¶¨Î»*/
+/*å—çŠ¶å®šä½*/
 .mlra{margin-left: auto;margin-right: auto;}
 .por{position: relative;}
 .poa{position: absolute; }
 .fl{float: left;}
 .fr{float: right;}
 
-/*ÄÚÁª¶¨Î»(ÉÏÖĞÏÂ)*/
+/*å†…è”å®šä½(ä¸Šä¸­ä¸‹)*/
 .vat{vertical-align: top;}
 .vam{vertical-align: middle;}
 .vab{vertical-align: bottom;}
@@ -40,7 +40,7 @@ body,div,dl,dt,dd,ul,ol,li,table,tr,td,form,input,select,textarea,blockquote,h1,
 .vasup{vertical-align:super;}
 .vasub{vertical-align:sub;}
 
-/*ÎÄ×ÖÅÅ°æ*/
+/*æ–‡å­—æ’ç‰ˆ*/
 .tac{text-align: center;}
 .tal{text-align: left;}
 .tar{text-align: right;}
@@ -49,7 +49,7 @@ body,div,dl,dt,dd,ul,ol,li,table,tr,td,form,input,select,textarea,blockquote,h1,
 
 
 
-/*±³¾°¶¨Î»*/
+/*èƒŒæ™¯å®šä½*/
 .bgptc{background-position: top center;}
 .bgpbc{background-position: bottom center;}
 .bgrn{ background-repeat: no-repeat;}
