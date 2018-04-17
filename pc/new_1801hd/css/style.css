@@ -17,9 +17,9 @@
 
 .banner{ background-color: #94131c; background-image: radial-gradient(#ec4955 30%, #94131c 100%); width: 100%; height: 745px; animation: opacity 3s both; }
 .banner-bf{position:absolute; top: 0; left: 0; overflow: hidden;width: 100%; height: 745px;}
-.banner-bf::before{ position: absolute; top:0; left: 0;  display: inline-block; content: " ";  background-image: url(../img/bg2.png); background-position: left top; background-repeat: no-repeat; width: 50%; height: 745px; animation: transform2 3s both;}
+.banner-bf::before{ position: absolute; top:0; left: 0;  display: inline-block; content: " ";  background-image: url(../img/bg2.png); background-position: left top; background-repeat: no-repeat; width: 420px; height: 745px; animation: transform2 3s both;}
 
-.banner-bf::after{ position: absolute; top:0; right: 0;  display: inline-block; content: " ";  background-image: url(../img/bg2.png); background-position: right top; background-repeat: no-repeat; width: 50%;  height: 745px; animation: transform2 3s both;}
+.banner-bf::after{ position: absolute; top:0; right: 0;  display: inline-block; content: " ";  background-image: url(../img/bg2.png); background-position: right top; background-repeat: no-repeat; width: 380px;  height: 745px; animation: transform2 3s both;}
 
 .bg3{background-image: url(../img/bg3.png); width: 905px;height: 716px; left: 175px; top:41px; z-index: 0;animation: transform1 3s both;}
 .bg4{background-image: url(../img/bg4.png); width: 975px; height: 1010px;}
