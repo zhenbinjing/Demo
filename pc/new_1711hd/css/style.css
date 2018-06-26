@@ -55,7 +55,7 @@
 
 .banner{height: 771px;}
 
-.bn1{background-image: url(../img/bn1.png);  height: 795px; width: 100%;  animation: bscalez 3s both; animation-delay:3s; opacity: 0;background-size: cover;}
+.bn1{background-image: url(../img/bn1.png);  height: 795px; width: 100%;  animation: bscalez 3s both; animation-delay:3s; opacity: 0;background-size: 100% 100%;}
 .bn2{background-image: url(../img/bn2.png);  height: 600px; width: 1098px; left: 50%; margin-left: -546px; margin-top: 50px; animation: bscalez2 6s infinite; animation-delay:3s;opacity: 0}
 
 @keyframes bscalez {
