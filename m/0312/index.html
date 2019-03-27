@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>爱尔眼科飞秒白内障手术发布会</title>
+<meta name="description" content="白内障手术新升级 飞秒无刀选爱尔" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<script>
+!function(a,b){var f,g,h,i,c=a.documentElement,d=navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),e=d?Math.min(b.devicePixelRatio,3):1;e=window.top===window.self?e:1,e=1,f=1/e,g="orientationchange"in window?"orientationchange":"resize",c.dataset.dpr=e,h=a.createElement("meta"),h.name="viewport",h.content="initial-scale="+f+",maximum-scale="+f+", minimum-scale="+f,c.firstElementChild.appendChild(h),i=function(){var a=750,b=c.clientWidth;b/e>a&&(b=a*e),c.style.cssText="font-size:"+100*(b/a)+"px;"+"max-width:"+b+"px;"+"margin:auto;"},i(),a.addEventListener&&b.addEventListener(g,i,!1)}(document,window);
+</script>
+ <style>
+        .music{
+            position: absolute;
+            z-index: 1000;
+            right: 40px;
+            top: 0px;
+            padding: 10px;
+            width: 25px;
+            height: 25px;
+        }
+        .music .music-btn {
+            display: block;
+            padding-left: 1px;
+            width: 25px;
+            height: 25px;
+            background-image: url(css/img/music-1.png);
+            background-size: 100% 100%;
+        }
+        .music .music-btn.play {
+            background-image: url(css/img/music-0.png);
+        }
+    </style>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+<div id="music" class="music">
+        <a class="music-btn"></a>
+    </div>
+<div class="wp">
+  <div class="wp-inner">
+    <div class="page page1">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p1-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/1-1.png" alt=""> </div>
+      <div class="p1-2 js-animate animated" data-animate="fadeInLeft" data-time="1000"> <img src="img/1-2.png" alt=""> </div>
+      <div class="p1-3 js-animate animated" data-animate="fadeInRight " data-time="1500"> <img src="img/y.png" alt=""> </div>
+    </div>
+    <div class="page page2">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p2-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/2-1.png" alt=""> </div>
+      <div class="videok js-animate animated" data-animate="fadeInRight" data-time="1000" >
+       <div style="width: 100%; height: 100%; position: absolute" onClick="playvid()"></div>
+        <video controls id="myVideo">
+          <source src="video/ss.mp4" type="video/mp4" >
+          您的浏览器不支持video标签</video>
+      </div>
+      <div class="p2-2 js-animate animated" data-animate="fadeInLeft " data-time="1500"> <img src="img/y.png" alt=""> </div>
+      <div class="p2-3 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page3">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p3-0 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/3-0.png" alt=""> </div>
+      <div class="la js-animate animated" data-animate="fadeInUp" data-time="1000">
+       <span onClick="layercc1();"><img src="img/3-1.png" alt=""></span>
+		  <span onClick="layercc2();"><img src="img/3-2.png" alt=""></span>
+		  <span onClick="layercc3();"><img src="img/3-3.png" alt=""></span>
+		  <span onClick="layercc4();"><img src="img/3-4.png" alt=""></span>
+		</div>
+      <div class="p3-2 js-animate animated" data-animate="fadeInLeft " data-time="1500"> <img src="img/y.png" alt=""> </div>
+      <div class="p3-3 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page4">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p4-0 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/4-0.png" alt=""> </div>
+      <div class="p4-1 js-animate animated" data-animate="fadeInRight" data-time="1000"> <img src="img/4-1.png" alt=""> </div>
+      <div class="p4-2 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page5">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p2-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/5-1.png" alt=""> </div>
+      <div class="p5-2 js-animate animated" data-animate="fadeInRight" data-time="1000"> <img src="img/5-2.png" alt=""> </div>
+      <div class="p5-3 js-animate animated" data-animate="fadeInLeft" data-time="1500"> <a href="/swt/" target="_blank"><img src="img/5-3.png" alt=""></a> </div>
+      <div class="p5-4 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page6">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p2-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/6-1.png" alt=""> </div>
+      <div class="p6-2 js-animate animated" data-animate="fadeInRight" data-time="1000"> <img src="img/6-2.png" alt=""> </div>
+      <div class="p6-3 js-animate animated" data-animate="fadeInLeft" data-time="1500"> <img src="img/6-3.png" alt=""> </div>
+      <div class="p6-4 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page7">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p2-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/6-1.png" alt=""> </div>
+      <div class="p7-1 js-animate animated" data-animate="fadeInRight" data-time="1000"> <img src="img/7-1.png" alt=""> </div>
+      <div class="p7-2 js-animate animated" data-animate="fadeInLeft" data-time="1500"> <img src="img/7-2.png" alt=""> </div>
+      <div class="p6-4 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page8">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p2-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/6-1.png" alt=""> </div>
+      <div class="p8-1 js-animate animated" data-animate="fadeInRight" data-time="1000"> <img src="img/8-1.png" alt=""> </div>
+      <div class="p8-2 js-animate animated" data-animate="fadeInLeft" data-time="1500"> <img src="img/8-2.png" alt=""> </div>
+      <div class="p6-4 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page9">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p2-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/9-1.png" alt=""> </div>
+      <a href="https://map.baidu.com/mobile/webapp/place/detail/qt=ninf&wd=%E4%B8%9C%E8%8E%9E%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86%E4%B8%AD%E5%BF%83&c=119&searchFlag=bigBox&version=5&exptype=dep&src_from=webapp_all_bigbox&wd2=%E4%B8%9C%E8%8E%9E%E5%B8%82%E5%B8%82%E8%BE%96%E5%8C%BA&sug_forward=3dfb4f7e1fa0b5fe471a327e&src=1&uid=3dfb4f7e1fa0b5fe471a327e&industry=enterprise&qid=5737005027178028431/showall=1&pos=0&da_ref=listclk&da_qrtp=11&da_adtp=&da_log=&da_adquery=%E4%B8%9C%E8%8E%9E%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86%E4%B8%AD%E5%BF%83&da_adtitle=%E4%B8%9C%E8%8E%9E%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86%E4%B8%AD%E5%BF%83&da_adindus=%E6%96%87%E5%8C%96%E4%BC%A0%E5%AA%92;%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86&detail_from=list&vt=map" target="_blank" class="dt js-animate animated" data-animate="fadeInLeft" data-time="1000"> <img src="img/9-2.png" alt=""> </a>
+      <div class="p9-3 js-animate animated" data-animate="fadeInRight" data-time="1500"> <img src="img/9-3.png" alt=""> </div>
+      <div class="p9-4 js-animate animated" data-animate="fadeInUp" data-time="2000"> <img src="img/foot.png" alt=""> </div>
+    </div>
+    <div class="page page10">
+      <div class="logo js-animate animated" data-animate="bounceIn" data-time="0"> <img src="img/logo.png" alt=""> </div>
+      <div class="p2-1 js-animate animated" data-animate="bounceIn" data-time="500"> <img src="img/10-0.png" alt=""> </div>
+      <form action="/plus/diy.php" enctype="multipart/form-data" method="post" id="wfform" name="wfform" onsubmit="return postcheck()" target="_parent">
+        <input type="hidden" name="action" value="post"/>
+        <input type="hidden" name="diyid" value="18"/>
+        <input type="hidden" name="do" value="2" />
+        <div class="formk js-animate animated" data-animate="fadeInRight" data-time="1000">
+          <div class="text">姓名：
+            <input type="text" name="name" id="name" style="width:50%;border:1px solid #E8E8E8;line-height: 25px;background-color:#fff;border-radius:4px;color:#999;" class="intxt" value=""/>
+          </div>
+          <div class="text">年龄：
+            <input type="text" name="age" id="age" style="width:50%;border:1px solid #E8E8E8;line-height: 25px;;background-color:#fff;border-radius:4px;color:#999;" class="intxt" value=""/>
+          </div>
+          <div class="text">电话：
+            <input type="text" name="phone" id="phone" style="width:50%;border:1px solid #E8E8E8;line-height: 25px;;background-color:#fff;border-radius:4px;color:#999;" class="intxt" value=""/>
+          </div>
+          <input type="submit" name="submit" value="" class="coolbg"/>
+          <a href="tel:076922660023" class="tel"></a> </div>
+        <input type="hidden" name="dede_fields" value="name,text;phone,text;age,text" />
+        <input type="hidden" name="dede_fieldshash" value="edc2b9fba3861d33f378efb1446d7ec4" />
+      </form>
+      <div class="p10-1 js-animate animated" data-animate="fadeInUp" data-time="1500"> <img src="img/foot.png" alt=""> </div>
+    </div>
+  </div>
+</div>
+<span class="start"><b></b></span> 
+<script src="js/zepto.js"></script> 
+<script src="js/zepto.fullpage.js"></script> 
+<script>
+        $('.wp-inner').fullpage({ 
+			change: function (e) {
+                // 移除动画属性
+                $('.page').eq(e.cur).find('.js-animate').each(function() {
+                    $(this).removeClass($(this).data('animate')).hide();
+                });
+            },
+            afterChange: function (e) {
+                // 添加动画属性
+                $('.page').eq(e.cur).find('.js-animate').each(function () {
+                    var $this = $(this);
+                    var time = $this.data('time');
+                    setTimeout(function () {
+                        $this.addClass($this.data('animate')).show();
+                    }, time)
+                });
+            },			
+			loop:true
+		});
+	
+		var bgAudio = new Audio();
+        bgAudio.loadStatus = 'unload';
+        bgAudio.loop = true;
+        function loadAudio(audio, url, callback) {
+            audio.src = url;
+            audio.load();
+            audio.addEventListener('canplay', function () {
+                bgAudio.loadStatus = 'loaded';
+                callback();
+            });
+            audio.addEventListener('loadstart', function () {
+                bgAudio.loadStatus = 'loading';
+            });
+        }
+	
+        function playAudio(){
+            if (bgAudio.loadStatus === 'unload') {
+                loadAudio(bgAudio, 'video/2932138975.mp3', function () {
+                    playAudio();
+                });
+                return 1;
+            }
+
+            bgAudio.play();
+        }
+	
+        function stopAudio() {
+            bgAudio.pause();
+        }
+	
+        bgAudio.addEventListener('playing' ,function (e) {
+            $('#music .music-btn').addClass('play');
+        });
+	
+        bgAudio.addEventListener('pause' ,function (e) {
+            $('#music .music-btn').removeClass('play');
+        });   
+		
+        $('body').one('touchstart', function () {
+            playAudio();
+            $('#music').on('touchstart', function (e) {
+                if (bgAudio.paused) {
+                    playAudio();
+                    return 0;
+                }
+                stopAudio();
+                return 1;
+            });
+        });
+	
+        window.onload = function() {
+            if (bgAudio.loadStatus !== 'unload') {return;}
+            playAudio();
+        };	
+	    var x = document.getElementById("myVideo"); 
+	    function playvid(){
+			x.play();
+			stopAudio();
+		}
+</script> 
+<script src="js/layer.js"></script> 
+<script>
+//页面层
+function layercc1(){
+layer.open({
+    type: 1
+    ,content: '<div class="gd"><img src="wz/1.png" width="100%"/><p>许女士是一名画家，喜欢用鲜明的色彩表达情感，曾在意大利举办画展;她也是一名摄影家，喜欢用镜头记录生活的美好，是中国女摄影家协会会员;她更是一位爱美的女人，在64岁的年纪活出了46岁的精彩。</p><p>然而，她同时也是一个深受白内障困扰的人，不仅视力严重下降，而且一到晚上，她的夜间视力已经到了无法满足正常生活基本用眼的地步!</p><img src="wz/1-2.png" width="100%"/><p>许女士一家人前往泰国度假过年，原本是开心快乐的时光，却因为眼睛的问题让她惊出一身冷汗!一天傍晚，她和家人从酒店出门散步，下楼时突然发现自己竟完全看不清台阶，一脚踏空，险些摔倒。这让一直把健康看的很重要的她感觉很后怕。自那之后，只要在光线较暗的地方活动，许女士都需要家人搀扶陪同。</p><p>其实，许女士在两年前就已经检查出了白内障，但由于事务繁忙，加之当时对生活的影响也不大，就被耽搁了下来。从泰国回国之后，痛定思痛的许女士立刻来到爱尔眼科医院就诊，希望尽快、彻底解决白内障的困扰。</p><p>经过详细检查，医生确诊许女士的病情为“双眼并发性白内障、双眼晶体不全脱位、双眼屈光不正”。许女士右眼视力仅有0.4，左右视力0.3，同时还发现，她还伴有高血压和老花。医生建议她接受焕晶白内障手术，这种手术不仅能解决她白内障的困扰，还能帮助她恢复良好的视力。</p><p>据介绍，焕晶白内障手术是爱尔眼科推出的一项以高质量术后视觉著称的白内障诊疗方式，能够在满足患者复明需求的基础上，进一步为患者提供清晰、舒适的视觉效果。对于有老花、近视、散光，甚至色彩敏感度下降等问题的患者，还能做到让患者不戴眼镜也能清晰视物。王勇主任认为，像许女士这样的对生活质量要求很高，同时对视觉效果颇为依赖的患者，只有焕晶白内障手术才能充分满足她的需求。</p><p>许女士毫不犹豫地接受了手术治疗的建议，并向医生提出，要做就做最高端、最贵的治疗。出人意料的是，医生拒绝了她的要求：“您是一位画家、摄影家，最适合您的应该是能够帮助您恢复远、中、近三种距离的良好视力，满足您日常生活和作画、摄影的需要，同时还能在术后不用戴老花镜的手术，并不一定非要选择最贵的那一种。”</p><p>医生的一席话，让许女士觉得特别温暖，也对这种个性化、定制化的治疗方案信心倍增。随后，许女士分两次分别进行了双眼的白内障手术，说起手术的经历，她回忆说：“手术很快就结束了，当我走下手术台，睁开眼睛的时候，从来没有感觉眼前这么明亮，仿佛回到了四十岁的时候!”</p><p>术后一周，许女士再次来院复查，她的双眼视力都恢复到了1.0，老花也得到了矫正，整个人显得精气神十足。她兴奋地说：“现在的我，眼睛变亮了。我好久没有看到我家种的花开的如此鲜艳美丽了，晚上出去运动走在林荫小道上，以前微弱的灯光现在格外亮眼，作画时对色彩的敏锐度和兴奋感也更强了，在选择颜色作画时，过程会更加兴奋，心跳都会加快。以后的日子里，我会更加爱惜我的眼睛!”</p></div>'
+    ,anim: 'up'
+    ,style: 'position:fixed; bottom:0; left:0; width: 100%; height: 80%; padding:0; border:none; overflow-y: scroll; z-index:999999'
+  });
+}
+function layercc2(){
+layer.open({
+    type: 1
+    ,content: '<div class="gd"><img src="wz/2.png" width="100%"/><p>莫教授是某肿瘤医院一位德高望重的退休外科老医生，曾用手术刀拯救过无数挣扎在死亡线上的患者。然而不久前，这位拿了一辈子手术刀的老教授发现自己生活快不能自理。原来，70岁的莫教授在五十多年前就是一位高度近视人士，年老之后又受到了白内障的困扰。没想到，只用了短短十几分钟时间，不仅白内障被治愈，就连跟随了自己大半辈子的高度近视也消失无踪了。</p><p>莫教授从五十多年前开始就有着600度的高度近视，最近几年，莫教授的眼镜在高度近视“旧患”之上又添白内障的“新伤”，导致他不得不又多配了一副眼镜，一副用来看近，一副用来看远，让他烦闷不已。</p><p>身为一名外科医生的莫教授虽然已经退休赋闲，但对高新医学技术的进展和应用一直都十分关注。尤其当自己被检查出患有双眼年龄相关性并发性白内障+高度近视之后，他就开始查阅相关资料，希望能找到一种理想的治疗方式。大半生的医学生涯让莫教授深知，手术是治疗白内障唯一有效的方式，他对手术也毫不畏惧。他所期望的，是一种更适合自己，能改善自己术后视力的手术。</p><p>后来，莫教授了解到目前先进的白内障手术方式不仅能解决白内障，还能同时解决患者近视、散光、老花等问题，引起了他浓厚的兴趣。他深入了解了爱尔眼科推出的一项以高质量术后视觉著称的焕晶白内障手术。这种手术能够在满足患者复明需求的基础上，进一步为患者提供清晰、舒适的视觉效果。对于许多原本需要佩戴眼镜的患者，还能做到术后不戴眼镜也能清晰视物。莫教授果断前往爱尔眼科医院就诊。</p><p>爱尔眼科的医生向这位医学界的老前辈讲解了焕晶白内障手术的技术原理。经过一番沟通，原本就对这项手术有一定了解的莫教授更加坚定了对手术的信心。　</p><p>手术时间很短，莫教授说：“没什么感觉，不痛不痒的，很快就做完了。”术后检查的结果更让莫教授惊喜不已，他的远、近视力均恢复到了1.5!这让他对眼科医学技术的发展赞叹不已：“由远及近，拥有全方位清晰视力，感觉自己的眼睛仿佛回到了年轻时代!”</p></div>'
+    ,anim: 'up'
+    ,style: 'position:fixed; bottom:0; left:0; width: 100%; height: 80%; padding:0; border:none; overflow-y: scroll; z-index:999999'
+  });
+}
+function layercc3(){
+layer.open({
+    type: 1
+    ,content: '<div class="gd"><img src="wz/3.png" width="100%"/><p>“信不过别人还能信不过自己的女婿？”但凡有人问起76岁的唐婆婆治疗白内障的经历，老人家总是拿这句话“打头阵”。</p><p>唐婆婆的女婿是一位在眼科疗领域颇具声望眼科专家，担任爱尔眼科东莞医院院长。3月12日，他亲自上阵，为自己的岳母实施了飞秒激光白内障手术。“手术是治疗白内障唯一有效的方式，但老人家对手术有一种本能的畏惧感，一听到要做手术就很害怕。”谈起这次手术，刘斐院长笑着说：“老人家操劳了一辈子，我作为一名眼科医生，眼健康就是我向岳母表达孝心最好的方式！”</p><p>唐婆婆近年来患白内障，加上老花眼的缘故，对生活带来诸多不便。左眼早前做过普通的白内障手术（超声乳化术），这次入院检查，右眼（未术眼）已下降至0.1，即使戴着老花镜，平日里看电视、读报的习惯也变得非常吃力。</p><p>作为眼科专家，必须让得了白内障的家人相信科学，接受手术；作为女婿，岳母得了白内障，必须要提供最好的治疗。详细检查之后，刘斐院长为自己的岳母选择了飞秒激光白内障手术：“这种手术能够在满足患者复明需求的基础上，进一步为患者提供清晰、舒适的视觉效果。对于有老花、近视、散光，甚至色彩敏感度下降等问题的患者，还能做到让患者不戴眼镜也能清晰视物。”</p><p>谈起飞秒激光白内障手术和普通白内障手术的差别，唐婆婆最有发言权了：“这次做的飞秒激光（白内障手术），我女婿说是治疗白内障最先进的手术方式，果然，整个手术过程更轻松，很快，也不痛。”说完，唐婆婆竖起大拇指。</p><p>手术非常成功，刘斐院长不仅治好了岳母的白内障，连老人家的老花眼也一并解决了。在不戴眼镜的情况下，唐婆婆双眼的术后视力马上恢复了年轻态，术后第二天就在病房内给医生们“表演”穿针，秒穿针的唐婆婆笑得合不拢嘴，“以后不仅看电视、看手机、旅行毫无压力，就连搁置了多年的针线活也重新拾起了哈哈。”</p><p>清晰的术后视力让唐婆婆露出了开心的笑容，医生和护士们都从唐婆婆的笑容中看出她对手术的满意和对女婿的自豪!</p></div>'
+    ,anim: 'up'
+    ,style: 'position:fixed; bottom:0; left:0; width: 100%; height: 80%; padding:0; border:none; overflow-y: scroll; z-index:999999'
+  });
+}
+function layercc4(){
+layer.open({
+    type: 1
+    ,content: '<div class="gd"><img src="wz/4.png" width="100%"/><p>　“医生说我用的是国际上的先进设备，没想到手术过程这么快，真是太激动了!”刚做完飞秒激光白内障手术的胡大爷脸上如沐春风，对爱尔眼科赞不绝口。</p><p>　胡大爷今年76岁，年轻时当过化工设计院的副院长、党委书记。</p><p>“我这个白内障有10年了，10年前检查出来是轻度白内障，我就一直在家里点眼药水，效果也不太好，心想反正也退休了，一直就这样模模糊糊地将就看看吧。”</p><p>今年体检，胡大爷白内障已经加深，报纸上、药瓶上的字戴着眼镜看得很费劲，严重影响了胡大爷的生活，眼看不能再拖了胡大爷这才决定手术。</p><p>说到选择爱尔眼科的原因，胡大爷笑着说“我天天早上看报纸，报纸上有爱尔眼科的新闻报道嘛，信得过”。</p><p>胡大爷想趁年前赶紧做了，能明明亮亮过个好年。胡大爷先实施了左眼飞秒激光白内障手术，手术过程很顺利，术后检查，胡大爷左眼视力从0.08恢复到1.0。</p><p>做完手术的胡大爷激动不已，“你们医院真的太负责了，这下能过个好年了哈哈。”</p></div>'
+    ,anim: 'up'
+    ,style: 'position:fixed; bottom:0; left:0; width: 100%; height: 80%; padding:0; border:none; overflow-y: scroll; z-index:999999'
+  });
+}	
+</script> 
+<script type="text/javascript">
+			function postcheck(){
+				if (document.wfform.name.value==""){
+					alert('请填写姓名！');
+					document.wfform.name.focus();
+					return false;
+				}
+				var reg1 = /^[\u4e00-\u9fa5]{2,4}$/;
+				if (!reg1.test(document.wfform.name.value)){
+					alert('姓名格式不正确，请填写真实姓名！');
+					document.wfform.name.focus();
+					return false;
+				}
+				if (document.wfform.phone.value==""){
+					alert('请填写手机号码！');
+					document.wfform.phone.focus();
+					return false;
+				}
+				var reg2 = /^1[3,4,5,8]\d{9}$/;
+				if (!reg2.test(document.wfform.phone.value)){
+					alert('手机号码格式不正确，请填写正确的手机号码！');
+					document.wfform.phone.focus();
+					return false;
+				}
+				document.wfform.wfsubmit.disabled=true;
+				return true;	
+			}
+			var wfllref = '';
+			if (document.referrer.length > 0){
+				wfllref = document.referrer;
+			}
+			try{
+				if (wfllref.length == 0 && opener.location.href.length > 0){
+				wfllref = opener.location.href;
+				}
+			}
+			catch (e){}
+			document.cookie="WFLLURL=" + wfllref + ";path=/";
+		
+		</script>
+		
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+    document.write("<script src='http://www.aier0769.com/accessToken/signPackage.php?originUrl=" + window.location.href + "' type='text/javascript'><\/script>");
+</script>
+<script>
+    var baseUrl = "http://www.aier0769.com/h5/0312h5"; //分享Js接口安全域名URL
+    var wxData = {
+        "imgUrl" : baseUrl + '/cc.png', //分享图标
+        "link"   : baseUrl,
+        "title"  : '爱尔眼科飞秒白内障手术发布会',
+        "desc"   : '白内障手术新升级 飞秒无刀选爱尔'
+    };
+    wx.config({
+        debug: false,
+        appId: signPackage.appId,
+        timestamp: parseInt(signPackage.timestamp),
+        nonceStr: signPackage.nonceStr,
+        signature: signPackage.signature,
+        jsApiList: [
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage'
+        ]
+    });
+    wx.ready(function () {
+        wx.onMenuShareTimeline({
+            title: wxData.title,
+            link: wxData.link,
+            imgUrl: wxData.imgUrl,
+            success: function () {
+            }
+        });
+        wx.onMenuShareAppMessage({
+            title: wxData.title,
+            desc: wxData.desc,
+            link: wxData.link,
+            imgUrl: wxData.imgUrl,
+            type: 'link',
+            dataUrl: '',
+            success: function () {
+            }
+        });
+    });
+</script>
+</body>
+</html>
